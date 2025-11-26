@@ -29,20 +29,21 @@ li a:hover {
     }
 }
 
+.after-yellow {
+    position: relative;
+}
+
+.your-work .after-yellow::after,
+.extension-section .after-yellow::after {
+    content: url(../img/blue-base.png);
+}
+
 .after-yellow::after {
     content: url(../img/price-yellow.png);
     position: absolute;
     z-index: -1;
     right: 0;
     bottom: -18px;
-}
-
-.your-work .after-yellow::after {
-    content: url(../img/blue-base.png);
-}
-
-.after-yellow {
-    position: relative;
 }
 
 .project-section .after-yellow::after,
@@ -53,14 +54,6 @@ li a:hover {
 .customise-section .after-yellow::after {
     left: 0;
     top: 25px;
-}
-
-.extension-section .after-yellow::after {
-    right: 61px;
-}
-
-.your-data .after-yellow::after {
-    right: 111px;
 }
 
 /* header  */
@@ -341,6 +334,7 @@ header .btn-primary {
     color: #ffffff;
     font-size: 72px;
     z-index: 1;
+    display: inline-block;
 }
 
 /* customise section  */
@@ -498,6 +492,7 @@ h4 {
 .your-data h2 {
     font-size: 72px;
     color: #212529;
+    display: inline-block;
 }
 
 .your-data img {
@@ -511,7 +506,7 @@ h4 {
 }
 
 .sponsor-section h2 {
-    width: 69%;
+    width: 84%;
     font-size: 72px;
     text-align: center;
     margin: 0 auto;
